@@ -1,3 +1,8 @@
+ /* Disable tap highlight on touch devices */
+ button, a, input, textarea {
+     -webkit-tap-highlight-color: transparent;
+ }
+
  /* Custom animations */
 .fade-in {
     animation: fadeIn 2s ease-in-out;
