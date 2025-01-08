@@ -76,6 +76,11 @@ nav a:hover {
     .nav-links li:last-child {
         border-bottom: none;
     }
+    .container > .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .nav-links a {
@@ -153,10 +158,11 @@ main {
 }
 
 footer {
-    background-color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: #6b6b6b; /* Adjust the color as needed */
+    border-top-left-radius: 100% 200px;
+    border-top-right-radius: 100% 200px;
+    overflow: hidden;
 }
 
 /* Cursor Styles */
