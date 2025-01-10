@@ -1,9 +1,9 @@
  /* Disable tap highlight on touch devices */
- button, a, input, textarea {
-     -webkit-tap-highlight-color: transparent;
- }
+button, a, input, textarea {
+    -webkit-tap-highlight-color: transparent;
+}
 
- /* Custom animations */
+/* Custom animations */
 .fade-in {
     animation: fadeIn 2s ease-in-out;
 }
@@ -16,8 +16,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1C1C1C;
-    margin: 0;
     color: #BCB8B1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -158,8 +161,11 @@ main {
 }
 
 footer {
-    position: relative;
-    background: #6b6b6b; /* Adjust the color as needed */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 100% 200px;
     border-top-right-radius: 100% 200px;
     overflow: hidden;
@@ -203,7 +209,7 @@ footer {
 .cursor-indicator {
     display: inline-block;
     width: 2px;
-    height: 50px;
+    height: 60px;
     background-color: #8A817C;
     animation: blink 1s step-end infinite;
     vertical-align: middle; /* Align with text */
@@ -242,7 +248,7 @@ html, body {
     position: relative;
     color: #BCB8B1; /* Updated color */
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.25rem;
     overflow: hidden;
 }
 
@@ -272,146 +278,100 @@ html, body {
     100% { clip: rect(0px, 9999px, 60px, 0); }
 }
 
-/* Custom Font Sizes */
-.custom-font-size {
-    font-size: 1.5rem; /* Default size equivalent to text-2xl */
-}
-
-@media (min-width: 640px) { /* md */
-    .custom-font-size {
-        font-size: 2rem; /* Equivalent to md:text-4xl */
-    }
-}
-
-@media (min-width: 1024px) { /* lg */
-    .custom-font-size {
-        font-size: 3.75rem; /* Equivalent to lg:text-6xl */
-    }
-}
-
-/* Text Sizes */
-.text-xs {
-    font-size: 0.75rem;
-}
-
-.text-sm {
-    font-size: 0.875rem;
-}
-
-.text-base {
-    font-size: 1rem;
-}
-
-.text-lg {
-    font-size: 1.125rem;
-}
-
-.text-xl {
-    font-size: 1.25rem;
-}
-
-.text-2xl {
-    font-size: 1.5rem;
-}
-
-.text-3xl {
-    font-size: 1.875rem;
-}
-
-.text-4xl {
-    font-size: 2.25rem;
-}
-
-.text-5xl {
-    font-size: 3rem;
-}
-
-.text-6xl {
-    font-size: 3.75rem;
-}
-
-@media (min-width: 640px) { /* md */
-    .md:text-xs {
-        font-size: 0.75rem;
+@media (min-width: 340px) { /* Extra Small Screens */
+    .name-text{
+        font-size: 2.5rem;
     }
 
-    .md:text-sm {
-        font-size: 0.875rem;
+    .hero-text-sm{
+        font-size: 0.8rem;
     }
 
-    .md:text-base {
-        font-size: 1rem;
-    }
-
-    .md:text-lg {
-        font-size: 1.125rem;
-    }
-
-    .md:text-xl {
-        font-size: 1.25rem;
-    }
-
-    .md:text-2xl {
+    .hero-text-md{
         font-size: 1.5rem;
     }
 
-    .md:text-3xl {
-        font-size: 1.875rem;
-    }
+    .job-text{
+        font-size: 2rem;
+    }      
 
-    .md:text-4xl {
-        font-size: 2.25rem;
-    }
-
-    .md:text-5xl {
-        font-size: 3rem;
-    }
-
-    .md:text-6xl {
-        font-size: 3.75rem;
-    }
 }
 
-@media (min-width: 1024px) { /* lg */
-    .lg:text-xs {
-        font-size: 0.75rem;
+@media (min-width: 480px) { /* Small Screens */
+    .name-text{
+        font-size: 3.5rem;
     }
 
-    .lg:text-sm {
-        font-size: 0.875rem;
-    }
-
-    .lg:text-base {
+    .hero-text-sm{
         font-size: 1rem;
     }
 
-    .lg:text-lg {
-        font-size: 1.125rem;
+    .hero-text-md{
+        font-size: 2rem;
     }
 
-    .lg:text-xl {
-        font-size: 1.25rem;
+    .job-text{
+        font-size: 3rem;
+    }   
+
+}
+
+@media (min-width: 768px) { /* Medium Screens */
+    .name-text{
+        font-size: 6rem;
     }
 
-    .lg:text-2xl {
+    .hero-text-sm{
         font-size: 1.5rem;
     }
 
-    .lg:text-3xl {
-        font-size: 1.875rem;
+    .hero-text-md{
+        font-size: 2.5rem;
     }
 
-    .lg:text-4xl {
-        font-size: 2.25rem;
+    .job-text{
+        font-size: 6rem;
     }
 
-    .lg:text-5xl {
+
+}
+
+@media (min-width: 1025px) { /* Large Screens */
+    .name-text{
+        font-size: 8rem;
+    }
+
+    .hero-text-sm{
+        font-size: 2rem;
+    }
+
+    .hero-text-md{
         font-size: 3rem;
     }
 
-    .lg:text-6xl {
-        font-size: 3.75rem;
+    .job-text{
+        font-size: 7rem;
     }
+
+}
+
+@media (min-width: 1921px) { /* Extra Large Screens */
+    .name-text{
+        font-size: 9.5rem;
+    }
+
+    .hero-text-sm{
+        font-size: 2.5rem;
+    }
+
+    .hero-text-md{
+        font-size: 3.5rem;
+    }
+
+    .job-text{
+        font-size: 7.5rem;
+    }
+
 }
 
 /* Scroll Indicator Styles */
@@ -445,13 +405,13 @@ html, body {
 /* Neumorphism Button Styles */
 .neumorphism-button {
     background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increased padding */
     border-radius: 10px;
     box-shadow:  2px 2px 4px #0B0B0B,
                 -2px -2px 4px #2A2A2A;
     color: #BCB8B1;
     font-weight: bold;
-    cursor: pointer;
+    font-size: 1.25rem; /* Optional: Increase font size */
 }
 
 .neumorphism-button:hover {
