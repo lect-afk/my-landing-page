@@ -261,3 +261,16 @@ nav a:hover {
     width: 140px; /* Adjusted width to accommodate padding */
     height: 140px; /* Adjusted height to accommodate padding */
 }
+
+/* Neumorphism Progress Bar Styles */
+.neumorphic-bg {
+    background: #1C1C1C;
+    border-radius: 9999px;
+    box-shadow: inset 5px 5px 10px #0B0B0B,
+                inset -5px -5px 10px #2A2A2A;
+}
+
+.neumorphic-progress {
+    box-shadow: 2px 2px 5px #0B0B0B,
+                -2px -2px 5px #2A2A2A;
+}
