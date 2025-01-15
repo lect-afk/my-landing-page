@@ -53,17 +53,31 @@ nav a:hover {
 }
 
 .social-links a {
-    color: #BCB8B1;
-    transition: color 0.3s ease;
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #BCB8B1;
+    box-shadow: inset 2px 2px 4px #0B0B0B,
+                inset -2px -2px 4px #2A2A2A;
 }
 
-/* Main Content Styles */
-main {
-    padding: 40px 20px;
+.timeline-item {
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.timeline-item:hover {
+    box-shadow: inset 2px 2px 4px #0B0B0B,
+                inset -2px -2px 4px #2A2A2A;
 }
 
 .octagon-pattern{
@@ -77,18 +91,6 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-}
-
-footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
-    box-shadow:  2px 2px 4px #0B0B0B,
-                -2px -2px 4px #2A2A2A;
-    border-top-left-radius: 100% 200px;
-    border-top-right-radius: 100% 200px;
-    overflow: hidden;
 }
 
 /* Cursor Styles */
@@ -258,32 +260,4 @@ footer {
     border-radius: 50%; /* Makes the background circular */
     width: 140px; /* Adjusted width to accommodate padding */
     height: 140px; /* Adjusted height to accommodate padding */
-}
-
-/* Neumorphic Oval-Shaped Navigation Menu Styles */
-.neumorphic-nav {
-    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
-    border-radius:5%;
-    box-shadow:  2px 2px 4px #0B0B0B,
-                -2px -2px 4px #2A2A2A;
-    border-bottom-left-radius: 100% 100px;
-    border-bottom-right-radius: 100% 200px;
-    margin: 0 auto;
-    width: 100%;
-    position: fixed;
-    z-index: 8999;
-}
-
-/* Tablet and Mobile Layout Styles */
-@media (min-width: 320px) and (max-width: 1023px) {
-    .header, .about, .experience {
-        text-align: center;
-    }
-    .flex {
-        flex-direction: column;
-    }
-    
-    .social-links {
-        flex-direction: row;
-    }
 }

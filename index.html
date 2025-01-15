@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
+    <title>My Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -15,48 +15,52 @@
             <div>
                 <h1 class="text-5xl font-bold fade-in" data-text="Alec Escasa">Alec Escasa</h1>
                 <h1 class="text-2xl font-bold mb-4 mt-4 fade-in text-indigo-400" data-text="Web Developer">Web Developer</h1>
-                <p class="text-base fade-in">I turn ideas into functional websites, tailored to your needs.</p>
-                <nav class="nav hidden lg:block">
-                    <ul class="mt-16 w-max">
-                        <li><a class="mb-2 text-sm font-bold group flex items-center py-3 active" href="#about">ABOUT</a></li>
-                        <li><a class="mb-2 text-sm font-bold group flex items-center py-3" href="#experience">EXPERIENCE</a></li>
-                        <li><a class="mb-2 text-sm font-bold group flex items-center py-3" href="#projects">PROJECTS</a></li>
-                    </ul>
-                </nav>
+                <p class="text-base md:text-lg fade-in">I turn ideas into functional websites, tailored to your needs.</p>
+                
+                <div class="hidden lg:flex flex-col items-start justify-center pb-20">
+                    <div class="scroll-indicator mt-4 relative w-16 h-40 rounded-full border-2 border-gray-400 flex items-center justify-center">
+                        <div class="dot w-6 h-6 bg-gray-800 rounded-full animate-bounce absolute top-0"></div>
+                    </div>
+                </div>
             </div>
-            <!-- <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
-                <li class="mr-5 shrink-0 text-xs">
-                    <a class="block" href="#" aria-label="Facebook">
+            
+            <ul class="ml-1 mt-8 flex items-center social-links" aria-label="Social media">
+                <li class="mr-2 shrink-0 text-xs">
+                    <a class="block" href="https://www.facebook.com/alec.escasa" aria-label="Facebook" target="_blank">
                         <ion-icon name="logo-facebook" class="h-6 w-6"></ion-icon>
                     </a>
                 </li>
-                <li class="mr-5 shrink-0 text-xs">
-                    <a class="block" href="#" aria-label="Linkedin">
+                <li class="mr-2 shrink-0 text-xs">
+                    <a class="block" href="https://www.linkedin.com/in/alec-escasa-9816252ba/" aria-label="Linkedin" target="_blank">
                         <ion-icon name="logo-linkedin" class="h-6 w-6"></ion-icon>
                     </a>
                 </li>
-                <li class="mr-5 shrink-0 text-xs">
-                    <a class="block" href="#" aria-label="Email">
+                <li class="mr-2 shrink-0 text-xs">
+                    <a class="block" href="mailto:alec.escasa4work@gmail.com" aria-label="Email" target="_blank">
                         <ion-icon name="mail" class="h-6 w-6"></ion-icon>
                     </a>
                 </li>
-            </ul> -->
+            </ul>
         </header>
     
         <main class="pt-24 lg:w-1/2 lg:py-24">
-    
+            <div class="lg:hidden flex flex-col items-center justify-center pb-20">
+                <div class="scroll-indicator mt-4 relative w-16 h-40 rounded-full border-2 border-gray-400 flex items-center justify-center">
+                    <div class="dot w-6 h-6 bg-gray-800 rounded-full animate-bounce absolute top-0"></div>
+                </div>
+            </div>
             <div class="mt-20 lg:mt-0 p-1">
                 <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
                     A Few Words About Me...
                 </h2>
                 <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Know Me More</h1>
                 <p class="text-start text-base md:text-lg mb-4">
-                    I am a web developer with solid experience in various technologies, including <b class="text-indigo-500"> Laravel</b>, 
-                    <b class="text-indigo-500">PHP</b>, <b class="text-indigo-500">HTML</b>, <b class="text-indigo-500">CSS</b>, <b class="text-indigo-500">JavaScript</b>, <b class="text-indigo-500">MySQL</b>, and CMS platforms like <b class="text-indigo-500">WordPress</b>. I focus on creating responsive and user-friendly websites using modern 
-                    frameworks such as <b class="text-indigo-500">Bootstrap</b> and <b class="text-indigo-500">Tailwind CSS.</b> My skills in UI/UX design ensure a practical and user-friendly experience.
+                    I am a web developer with solid experience in various technologies, including <b class="text-gray-300">Laravel</b>, 
+                    <b class="text-gray-300">PHP</b>, <b class="text-gray-300">HTML</b>, <b class="text-gray-300">CSS</b>, <b class="text-gray-300">JavaScript</b>, <b class="text-gray-300">MySQL</b>, and CMS platforms like <b class="text-gray-300">WordPress</b>. I focus on creating responsive and user-friendly websites using modern 
+                    frameworks such as <b class="text-gray-300">Bootstrap</b> and <b class="text-gray-300">Tailwind CSS.</b> My skills in UI/UX design ensure a practical and user-friendly experience.
                 </p>
                 <p class="text-start text-base md:text-lg mb-4">
-                    I was recently a senior web developer at <b class="text-indigo-500"> Mentorspire </b> a startup that provides Information Technology (IT) services to small and medium-sized businesses (SMBs).
+                    I was recently a senior web developer at <b class="text-gray-300"> Mentorspire </b> a startup that provides Information Technology (IT) services to small and medium-sized businesses (SMBs).
                     I had the opportunity to work on a wide range of projects, including web applications, and CMS websites.
                 </p>
                 <p class="text-start text-base md:text-lg">
@@ -65,17 +69,16 @@
             </div>
     
             <div class="mt-20">
-                <div class="hidden 2xl:flex flex-col items-center justify-center pb-20">
-                    <div class="scroll-indicator mt-4 relative w-16 h-40 rounded-full border-2 border-gray-400 flex items-center justify-center">
-                        <div class="dot w-6 h-6 bg-gray-800 rounded-full animate-bounce absolute top-0"></div>
-                    </div>
-                </div>
                 <div class="timeline">
+                    <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
+                        My Professional Journey...
+                    </h2>
+                    <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Experience That Defines Me</h1>                    
                     <div class="timeline-item mb-10">
                         <div class="timeline-content">
                             <h3 class="text-2xl font-bold">Senior Web Developer</h3>
-                            <p class="text-indigo-400 text-xl">Mentorspire</p>
-                            <span class="text-xs text-indigo-500">2024 - Present</span>
+                            <p class="text-gray-300 text-xl">Mentorspire</p>
+                            <span class="text-xs text-gray-500">2024 - Present</span>
                             <p class="text-md">Developed and maintained web applications using modern frameworks and technologies.</p>
                             <div class="badges mt-2">
                                 <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
@@ -92,8 +95,8 @@
                     <div class="timeline-item mb-10">
                         <div class="timeline-content">
                             <h3 class="text-2xl font-bold">Junior Web Developer</h3>
-                            <p class="text-indigo-400 text-xl">Mentorspire</p>
-                            <span class="text-xs text-indigo-500">2022 - 2023</span>
+                            <p class="text-gray-300 text-xl">Mentorspire</p>
+                            <span class="text-xs text-gray-500">2022 - 2023</span>
                             <p class="text-md">Assisted in developing and maintaining web applications, ensuring optimal performance and user experience.</p>
                             <div class="badges mt-2">
                                 <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
@@ -110,8 +113,8 @@
                     <div class="timeline-item mb-10">
                         <div class="timeline-content">
                             <h3 class="text-2xl font-bold">Internship: WordPress CMS Developer, Laravel Trainee</h3>
-                            <p class="text-indigo-400 text-xl">Mentorspire</p>
-                            <span class="text-xs text-indigo-500">2022</span>
+                            <p class="text-gray-300 text-xl">Mentorspire</p>
+                            <span class="text-xs text-gray-500">2022</span>
                             <p class="text-md">Worked on WordPress CMS projects, learned Laravel, and gained experience in web development.</p>
                             <div class="badges mt-2">
                                 <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
@@ -123,30 +126,52 @@
                     <div class="timeline-item mb-10">
                         <div class="timeline-content">
                             <h3 class="text-2xl font-bold">Bachelor of Science in Information Technology</h3>
-                            <p class="text-indigo-400 text-xl">College of Sciences, Technology, and Communications Inc.</p>
-                            <span class="text-xs text-indigo-500">2019 - 2022</span>
-                            <p class="text-md">Graduated BSIT - Achieved Best in Capstone Project for "ICHROMA: An Android-Based Mobile Application for Color Recognition Assistance for Colorblind Individuals Through Color Segmentation using Color Threshold Algorithm" - (Held at Queen Margarette Hotel Main, Domoit, Lucena, Quezon)</p>
+                            <p class="text-gray-300 text-xl">College of Sciences, Technology, and Communications Inc.</p>
+                            <span class="text-xs text-gray-500">2019 - 2022</span>
+                            <p class="text-md mb-2">Graduated BSIT - Achieved Best in Capstone Project for "ICHROMA: An Android-Based Mobile Application for Color Recognition Assistance for Colorblind Individuals Through Color Segmentation using Color Threshold Algorithm" - (Held at Queen Margarette Hotel Main, Domoit, Lucena, Quezon)</p>
+                            <p class="text-md mb-2">TESDA 2nd Zonal National Skills Competition in Web Technologies - Certificate of Participation (Held from November 6-10, 2019, in NCR, Luzon)</p>
+                            <p class="text-md mb-2">TESDA Regional Skills Competition in Web Design and Development - Gold Medalist (Held on April 8-12, 2019, at Lyceum of the Philippines University, Batangas)</p>
+                            <p class="text-md mb-2">TESDA Provincial Skills Competition in Web Design and Development - Gold Medalist (Held on March 11-14, 2019, at Quezon National Agricultural School)</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">WordPress</span>
+                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Elementor</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="py-20">
-                <h2 class="text-center text-2xl font-bold mb-8">My Recent Works</h2>
+                <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
+                    My Career Highlights...
+                </h2>
+                <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Work That Defines Me</h1>                
                 <div class="grid grid-cols-1 gap-8">
                     <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
-                        <span class="text-indigo-500 text-sm md:text-base">FRONTEND DEVELOPMENT</span>
-                        <span class="text-base font-bold text-lg md:text-xl text-indigo-400">Web Portfolio</span>
+                        <span class="text-gray-300 text-sm md:text-base">FRONTEND DEVELOPMENT</span>
+                        <span class="text-base font-bold text-lg md:text-xl">Web Portfolio</span>
                     </div>
                     <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
-                        <span class="text-indigo-500 text-sm md:text-base">FULL STACK DEVELOPMENT</span>
-                        <span class="text-base font-bold text-lg md:text-xl text-indigo-400">Voters Tagging System</span>
+                        <span class="text-gray-300 text-sm md:text-base">FULL STACK DEVELOPMENT</span>
+                        <span class="text-base font-bold text-lg md:text-xl">Voters Tagging System</span>
                     </div>
                     <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
-                        <span class="text-indigo-500 text-sm md:text-base">WORDPRESS CMS</span>
-                        <span class="text-base font-bold text-lg md:text-xl text-indigo-400">Ebina Residence Website</span>
+                        <span class="text-gray-300 text-sm md:text-base">WORDPRESS CMS</span>
+                        <span class="text-base font-bold text-lg md:text-xl">Ebina Residence Website</span>
                     </div>
                 </div>
             </div>
+            <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+                <p class="text-sm text-gray-500">
+                    As a small-timer with limited content, I struggled to find the right layout that worked for me—until I discovered <a class="text-indigo-500 font-bold" href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>'s style and layout. Inspired by her work, I designed and customized this site using Figma and coded it in Visual Studio Code. Built with HTML, CSS, JavaScript, and some Tailwind CSS, it’s deployed via GitHub for simplicity and reliability.
+                </p>                
+            </footer>
         </main>
     </div>
 
