@@ -1,12 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.getElementById('menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuBtn.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-});
-
 let cursorSquare = document.createElement('div');
 cursorSquare.className = 'cursor-square';
 document.body.appendChild(cursorSquare);
@@ -77,6 +68,36 @@ function addDotHoverEffect() {
 }
 
 addDotHoverEffect();
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        // Prevent default anchor click behavior
+        e.preventDefault();
+
+        // Remove 'active' class from all links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked link
+        this.classList.add('active');
+
+        // Smooth scroll to the target section
+        const targetId = this.getAttribute('href'); // Get the target section ID
+        const targetElement = document.querySelector(targetId); // Find the target element
+
+        // Define the offset (e.g., 100 pixels)
+        const offset = 100; // Adjust this value as needed
+        const elementPosition = targetElement.getBoundingClientRect().top; // Get the element's position relative to the viewport
+        const offsetPosition = elementPosition + window.scrollY - offset; // Calculate the position to scroll to
+
+        // Scroll to the target element smoothly
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
 
 function typeEffect(element, textArray, delay) {
     let index = 0;

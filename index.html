@@ -17,11 +17,39 @@
                 <h1 class="text-2xl font-bold mb-4 mt-4 fade-in text-indigo-400" data-text="Web Developer">Web Developer</h1>
                 <p class="text-base md:text-lg fade-in">I turn ideas into functional websites, tailored to your needs.</p>
                 
-                <div class="hidden lg:flex flex-col items-start justify-center pb-20">
+                <!-- <div class="hidden lg:flex flex-col items-start justify-center pb-20">
                     <div class="scroll-indicator mt-4 relative w-16 h-40 rounded-full border-2 border-gray-400 flex items-center justify-center">
                         <div class="dot w-6 h-6 bg-gray-800 rounded-full animate-bounce absolute top-0"></div>
                     </div>
-                </div>
+                </div> -->
+                <nav class="nav hidden lg:block" aria-label="In-page jump links">
+                    <ul class="mt-16">
+                        <li class="py-2">
+                            <a class="nav-link group flex items-center justify-between active" href="#about">
+                                <ion-icon name="person" class="mr-4 h-5 w-5"></ion-icon>
+                                <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a class="nav-link group flex items-center justify-between" href="#skills">
+                                <ion-icon name="star" class="mr-4 h-5 w-5"></ion-icon>
+                                <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Skills</span>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a class="nav-link group flex items-center justify-between" href="#experience">
+                                <ion-icon name="briefcase" class="mr-4 h-5 w-5"></ion-icon>
+                                <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a class="nav-link group flex items-center justify-between" href="#projects">
+                                <ion-icon name="folder" class="mr-4 h-5 w-5"></ion-icon>
+                                <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             
             <ul class="ml-1 mt-8 flex items-center social-links" aria-label="Social media">
@@ -49,193 +77,211 @@
             </ul>
         </header>
     
-        <main class="pt-24 lg:w-1/2 lg:py-24">
-            <div class="lg:hidden flex flex-col items-center justify-center pb-20">
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+            <!-- <div class="lg:hidden flex flex-col items-center justify-center pb-20">
                 <div class="scroll-indicator mt-4 relative w-16 h-40 rounded-full border-2 border-gray-400 flex items-center justify-center">
                     <div class="dot w-6 h-6 bg-gray-800 rounded-full animate-bounce absolute top-0"></div>
                 </div>
-            </div>
-            <div class="mt-20 lg:mt-0 p-1">
-                <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
-                    A Few Words About Me...
-                </h2>
-                <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Know Me More</h1>
-                <p class="text-start text-base md:text-lg mb-4">
-                    I am a web developer with solid experience in various technologies, including <b class="text-gray-300">Laravel</b>, 
-                    <b class="text-gray-300">PHP</b>, <b class="text-gray-300">HTML</b>, <b class="text-gray-300">CSS</b>, <b class="text-gray-300">JavaScript</b>, <b class="text-gray-300">MySQL</b>, and CMS platforms like <b class="text-gray-300">WordPress</b>. I created responsive and user-friendly websites using modern 
-                    frameworks such as <b class="text-gray-300">Bootstrap</b> and <b class="text-gray-300">Tailwind CSS.</b> My skills in UI/UX design ensure a practical and user-friendly experience.
-                </p>
-                <p class="text-start text-base md:text-lg mb-4">
-                    I was recently a senior web developer at <b class="text-gray-300"> Mentorspire </b> a startup that provides Information Technology (IT) services to small and medium-sized businesses (SMBs).
-                    I had the opportunity to work on a wide range of projects, including web applications, and CMS websites.
-                </p>
-                <p class="text-start text-base md:text-lg">
-                    I usually read manga in my spare time. I also enjoy playing pc games that focus on singleplayer aspects as a form of relaxation and escapism.
-                </p>
-            </div>
+            </div> -->
+            <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="About me">
+                <div style="background-color: #1C1C1C;" class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
+                        A Few Words About Me...
+                    </h2>
+                    <h1 class="text-3xl md:text-4xl font-bold about-title">Know Me More</h1>
+                </div>
+                <div>
+                    <p class="text-start text-base md:text-lg mb-4">
+                        I am a web developer with solid experience in various technologies, including <b class="text-gray-300">Laravel</b>, 
+                        <b class="text-gray-300">PHP</b>, <b class="text-gray-300">HTML</b>, <b class="text-gray-300">CSS</b>, <b class="text-gray-300">JavaScript</b>, <b class="text-gray-300">MySQL</b>, and CMS platforms like <b class="text-gray-300">WordPress</b>. I created responsive and user-friendly websites using modern 
+                        frameworks such as <b class="text-gray-300">Bootstrap</b> and <b class="text-gray-300">Tailwind CSS.</b> My skills in UI/UX design ensure a practical and user-friendly experience.
+                    </p>
+                    <p class="text-start text-base md:text-lg mb-4">
+                        I was recently a senior web developer at <b class="text-gray-300"> Mentorspire </b> a startup that provides Information Technology (IT) services to small and medium-sized businesses (SMBs).
+                        I had the opportunity to work on a wide range of projects, including web applications, and CMS websites.
+                    </p>
+                    <p class="text-start text-base md:text-lg">
+                        I usually read manga in my spare time. I also enjoy playing pc games that focus on singleplayer aspects as a form of relaxation and escapism.
+                    </p>
+                </div>
+            </section>
 
-            <div class="mt-20">
-                <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
-                    What I Bring to the Table...
-                </h2>
-                <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Skills That Empower Me</h1>
-                <div class="space-y-4">
-                    <div class="">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-gray-300">Laravel-PHP-Bootstrap-Javascript-HTML-MySQL (My main stack)</span>
-                            <span class="text-sm font-medium text-gray-500">70%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
-                            <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 70%"></div>
-                        </div>
+            <section id="skills" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="My Skills">
+                <div class="mt-20">
+                    <div style="background-color: #1C1C1C;" class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                        <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
+                            What I Bring to the Table...
+                        </h2>
+                        <h1 class="text-3xl md:text-4xl font-bold about-title">Core Skills</h1>
                     </div>
-                    <div class="">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-gray-300">UI/UX Design (I can design a decent website)</span>
-                            <span class="text-sm font-medium text-gray-500">35%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
-                            <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 35%"></div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-gray-300">Tailwind-Alpine-Laravel-Livewire (Making this my main stack)</span>
-                            <span class="text-sm font-medium text-gray-500">45%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
-                            <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 45%"></div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-gray-300">WordPress (I know how to work with CMS)</span>
-                            <span class="text-sm font-medium text-gray-500">75%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
-                            <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-gray-300">Coffee & Tea (Yep, I drink both)</span>
-                            <span class="text-sm font-medium text-gray-500">90%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
-                            <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-base font-medium text-gray-300">Swearing at my computer</span>
-                            <span class="text-sm font-medium text-gray-500">100%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
-                            <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="mt-20">
-                <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
-                    My Professional Journey...
-                </h2>
-                <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Experience That Defines Me</h1>                    
-                <div class="timeline">
-                    <div class="timeline-item mb-10">
-                        <div class="timeline-content">
-                            <h3 class="text-2xl font-bold mb-1">Senior Web Developer</h3>
-                            <p class="text-gray-300 text-xl mb-1">Mentorspire</p>
-                            <span class="text-xs text-gray-500 mb-1">2024</span>
-                            <p class="text-md">Developed and maintained web applications using modern frameworks and technologies.</p>
-                            <div class="badges mt-2">
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Git</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
+                    <div class="space-y-4">
+                        <div class="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Laravel-PHP-Bootstrap-Javascript-HTML-MySQL (My main stack)</span>
+                                <span class="text-sm font-medium text-gray-500">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
+                                <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 70%"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="timeline-item mb-10">
-                        <div class="timeline-content">
-                            <h3 class="text-2xl font-bold mb-1">Junior Web Developer</h3>
-                            <p class="text-gray-300 text-xl mb-1">Mentorspire</p>
-                            <span class="text-xs text-gray-500 mb-1">2022 - 2023</span>
-                            <p class="text-md">Assisted in developing and maintaining web applications, ensuring optimal performance and user experience.</p>
-                            <div class="badges mt-2">
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Git</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
+                        <div class="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">UI/UX Design (I can design a decent website)</span>
+                                <span class="text-sm font-medium text-gray-500">35%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
+                                <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 35%"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="timeline-item mb-10">
-                        <div class="timeline-content">
-                            <h3 class="text-2xl font-bold mb-1">Internship: WordPress CMS Developer, Laravel Trainee</h3>
-                            <p class="text-gray-300 text-xl mb-1">Mentorspire</p>
-                            <span class="text-xs text-gray-500 mb-1">2022</span>
-                            <p class="text-md">Worked on WordPress CMS projects, polished my Laravel skills, and gained experience in web development.</p>
-                            <div class="badges mt-2">
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">WordPress</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Elementor</span>
+                        <div class="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Tailwind-Alpine-Laravel-Livewire (Making this my main stack)</span>
+                                <span class="text-sm font-medium text-gray-500">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
+                                <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 45%"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="timeline-item mb-10">
-                        <div class="timeline-content">
-                            <h3 class="text-2xl font-bold mb-1">Bachelor of Science in Information Technology</h3>
-                            <p class="text-gray-300 text-xl mb-1">College of Sciences, Technology, and Communications Inc.</p>
-                            <span class="text-xs text-gray-500 mb-1">2019 - 2022</span>
-                            <p class="text-md mb-2">Graduated BSIT - Achieved Best in Capstone Project for "ICHROMA: An Android-Based Mobile Application for Color Recognition Assistance for Colorblind Individuals Through Color Segmentation using Color Threshold Algorithm" - (Held at Queen Margarette Hotel Main, Domoit, Lucena, Quezon)</p>
-                            <p class="text-md mb-2">TESDA 2nd Zonal National Skills Competition in Web Technologies - Certificate of Participation (Held from November 6-10, 2019, in NCR, Luzon)</p>
-                            <p class="text-md mb-2">TESDA Regional Skills Competition in Web Design and Development - Gold Medalist (Held on April 8-12, 2019, at Lyceum of the Philippines University, Batangas)</p>
-                            <p class="text-md mb-2">TESDA Provincial Skills Competition in Web Design and Development - Gold Medalist (Held on March 11-14, 2019, at Quezon National Agricultural School)</p>
-                            <div class="badges mt-2">
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">WordPress</span>
-                                <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Elementor</span>
+                        <div class="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">WordPress (I know how to work with CMS)</span>
+                                <span class="text-sm font-medium text-gray-500">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
+                                <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Coffee & Tea (Yep, I drink both)</span>
+                                <span class="text-sm font-medium text-gray-500">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
+                                <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Swearing at my computer</span>
+                                <span class="text-sm font-medium text-gray-500">100%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 neumorphic-bg">
+                                <div class="bg-indigo-500 h-2.5 rounded-full neumorphic-progress" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="py-20">
-                <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
-                    My Career Highlights...
-                </h2>
-                <h1 class="text-3xl md:text-4xl font-bold about-title mb-10">Work That Defines Me</h1>                
-                <div class="grid grid-cols-1 gap-8">
-                    <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
-                        <span class="text-gray-300 text-sm md:text-base">FRONTEND DEVELOPMENT</span>
-                        <span class="text-base font-bold text-lg md:text-xl">Web Portfolio</span>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
-                        <span class="text-gray-300 text-sm md:text-base">FULL STACK DEVELOPMENT</span>
-                        <span class="text-base font-bold text-lg md:text-xl">Voters Tagging System</span>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
-                        <span class="text-gray-300 text-sm md:text-base">WORDPRESS CMS</span>
-                        <span class="text-base font-bold text-lg md:text-xl">Ebina Residence Website</span>
+            </section>
+            
+            <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="My Experience">
+                <div class="mt-20">
+                    <div style="background-color: #1C1C1C;" class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                        <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
+                            My Professional Journey...
+                        </h2>
+                        <h1 class="text-3xl md:text-4xl font-bold about-title">Defining Experience</h1>  
+                    </div>          
+                    <div class="timeline">
+                        <div class="timeline-item mb-10">
+                            <div class="timeline-content">
+                                <h3 class="text-2xl font-bold mb-1">Senior Web Developer</h3>
+                                <p class="text-gray-300 text-xl mb-1">Mentorspire</p>
+                                <span class="text-xs text-gray-500 mb-1">2024</span>
+                                <p class="text-md">Developed and maintained web applications using modern frameworks and technologies.</p>
+                                <div class="badges mt-2">
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Git</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item mb-10">
+                            <div class="timeline-content">
+                                <h3 class="text-2xl font-bold mb-1">Junior Web Developer</h3>
+                                <p class="text-gray-300 text-xl mb-1">Mentorspire</p>
+                                <span class="text-xs text-gray-500 mb-1">2022 - 2023</span>
+                                <p class="text-md">Assisted in developing and maintaining web applications, ensuring optimal performance and user experience.</p>
+                                <div class="badges mt-2">
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Git</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item mb-10">
+                            <div class="timeline-content">
+                                <h3 class="text-2xl font-bold mb-1">Internship: WordPress CMS Developer, Laravel Trainee</h3>
+                                <p class="text-gray-300 text-xl mb-1">Mentorspire</p>
+                                <span class="text-xs text-gray-500 mb-1">2022</span>
+                                <p class="text-md">Worked on WordPress CMS projects, polished my Laravel skills, and gained experience in web development.</p>
+                                <div class="badges mt-2">
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">WordPress</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Elementor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item mb-10">
+                            <div class="timeline-content">
+                                <h3 class="text-2xl font-bold mb-1">Bachelor of Science in Information Technology</h3>
+                                <p class="text-gray-300 text-xl mb-1">College of Sciences, Technology, and Communications Inc.</p>
+                                <span class="text-xs text-gray-500 mb-1">2019 - 2022</span>
+                                <p class="text-md mb-2">Graduated BSIT - Achieved Best in Capstone Project for "ICHROMA: An Android-Based Mobile Application for Color Recognition Assistance for Colorblind Individuals Through Color Segmentation using Color Threshold Algorithm" - (Held at Queen Margarette Hotel Main, Domoit, Lucena, Quezon)</p>
+                                <p class="text-md mb-2">TESDA 2nd Zonal National Skills Competition in Web Technologies - Certificate of Participation (Held from November 6-10, 2019, in NCR, Luzon)</p>
+                                <p class="text-md mb-2">TESDA Regional Skills Competition in Web Design and Development - Gold Medalist (Held on April 8-12, 2019, at Lyceum of the Philippines University, Batangas)</p>
+                                <p class="text-md mb-2">TESDA Provincial Skills Competition in Web Design and Development - Gold Medalist (Held on March 11-14, 2019, at Quezon National Agricultural School)</p>
+                                <div class="badges mt-2">
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Laravel</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">PHP</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Bootstrap</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Javascript</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">MySQL</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">HTML</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">CSS</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">WordPress</span>
+                                    <span class="badge bg-indigo-500 text-white rounded-full px-2 my-1 text-xs font-semibold">Elementor</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="My Projects">
+                <div class="py-20">
+                    <div style="background-color: #1C1C1C;" class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                        <h2 class="text-lg md:text-2xl text-indigo-400 mb-2">
+                            My Career Highlights...
+                        </h2>
+                        <h1 class="text-3xl md:text-4xl font-bold about-title">Work That Defines Me</h1>
+                    </div>         
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
+                            <span class="text-gray-300 text-sm md:text-base">FRONTEND DEVELOPMENT</span>
+                            <span class="text-base font-bold text-lg md:text-xl">Web Portfolio</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
+                            <span class="text-gray-300 text-sm md:text-base">FULL STACK DEVELOPMENT</span>
+                            <span class="text-base font-bold text-lg md:text-xl">Voters Tagging System</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-center border-b py-4">
+                            <span class="text-gray-300 text-sm md:text-base">WORDPRESS CMS</span>
+                            <span class="text-base font-bold text-lg md:text-xl">Ebina Residence Website</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
                 <p class="text-sm text-gray-500">
                     As a small-timer with limited content, I struggled to find the right layout that worked for me—until I discovered <a class="text-indigo-500 font-bold" href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>'s style and layout. Inspired by her work, I designed and customized this site using Figma and coded it in Visual Studio Code. Built with HTML, CSS, JavaScript, and some Tailwind CSS, it’s deployed via GitHub for simplicity and reliability.

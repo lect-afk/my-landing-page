@@ -43,8 +43,26 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    color: #007acc;
+
+.nav-link {
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 10px;
+    transition: width 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    width: 150px;
+}
+
+.nav-link:hover {
+    box-shadow: inset 2px 2px 4px #0B0B0B,
+                inset -2px -2px 4px #2A2A2A;
+    width: 300px;
+}
+
+.nav-link.active {
+    width: 300px;
+    transition: width 0.3s ease;
 }
 
 .social-links {
