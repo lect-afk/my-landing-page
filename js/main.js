@@ -99,6 +99,26 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Change active link based on scroll position
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY + 100; // Adjust for offset
+
+    document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            const currentId = section.getAttribute('id');
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
 function typeEffect(element, textArray, delay) {
     let index = 0;
     let textIndex = 0;
