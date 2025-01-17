@@ -115,7 +115,23 @@ nav a {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.timeline-item:hover {
+.timeline-item-outer{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 10px #0B0B0B,
+                inset -5px -5px 10px #2A2A2A;
+    padding: 20px; 
+}
+
+.project-card{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px; 
+}
+
+.project-card:hover {
     box-shadow: inset 2px 2px 4px #0B0B0B,
                 inset -2px -2px 4px #2A2A2A;
 }
@@ -313,4 +329,114 @@ nav a {
 .neumorphic-progress {
     box-shadow: 2px 2px 5px #0B0B0B,
                 -2px -2px 5px #2A2A2A;
+}
+
+/* Modal Styles */
+.modal {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal-content {
+    position: relative; /* Set relative positioning for the modal content */
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 40px;
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.project-image{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px; 
+}
+
+.project-image img{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px; 
+}
+
+.project-details{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 10px #0B0B0B,
+                inset -5px -5px 10px #2A2A2A;
+    padding: 20px; 
+}
+
+.project-details-inner{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px; 
+}
+
+.skills-inner{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px; 
+}
+
+.skills-outer{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 10px #0B0B0B,
+                inset -5px -5px 10px #2A2A2A;
+    padding: 20px; 
+}
+
+.action-button{
+    background: linear-gradient(145deg, #1C1C1C, #1A1A1A);
+    border-radius: 5px;
+    box-shadow:  2px 2px 4px #0B0B0B,
+                -2px -2px 4px #2A2A2A;
+    padding: 20px;
+    width: 280px;
+}
+
+.action-button:hover {
+    box-shadow: inset 2px 2px 4px #0B0B0B,
+                inset -2px -2px 4px #2A2A2A;
+}
+
+.modal-open {
+    overflow: hidden;
 }

@@ -119,40 +119,33 @@ window.addEventListener('scroll', () => {
     });
 });
 
-function typeEffect(element, textArray, delay) {
-    let index = 0;
-    let textIndex = 0;
-    function type() {
-        if (textIndex < textArray.length) {
-            if (index < textArray[textIndex].length) {
-                element.innerHTML += textArray[textIndex].charAt(index);
-                index++;
-                setTimeout(type, delay);
-            } else {
-                setTimeout(() => {
-                    backspace();
-                }, 2000); // Pause before backspacing
-            }
-        } else {
-            textIndex = 0; // Reset to loop through textArray
-            setTimeout(type, 2000); // Pause before starting again
-        }
-    }
-    function backspace() {
-        if (index > 0) {
-            element.innerHTML = element.innerHTML.slice(0, -1);
-            index--;
-            setTimeout(backspace, delay);
-        } else {
-            index = 0;
-            textIndex++;
-            setTimeout(type, delay);
-        }
-    }
-    type();
-}
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.project-card, .project-card a').forEach((card, index) => {
+        card.addEventListener('click', function() {
+            const modal = document.getElementById(`modal-${index + 1}`);
+            modal.style.visibility = 'visible'; // Set visibility to visible when opening
+            modal.style.opacity = '1'; // Set opacity to 1 when opening
+            document.body.classList.add('modal-open'); // Disable body scrolling
+        });
+    });
 
-const typingElement = document.getElementById('typing-animation');
-const texts = ['Frontend', 'Backend', 'Fullstack'];
-const typingDelay = 30;
-typeEffect(typingElement, texts, typingDelay);
+    document.querySelectorAll('.close-modal').forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+            const modal = closeBtn.closest('.modal');
+            modal.style.visibility = 'hidden'; // Set visibility to hidden when closing
+            modal.style.opacity = '0'; // Set opacity to 0 when closing
+            document.body.classList.remove('modal-open'); // Enable body scrolling
+        });
+    });
+
+    // Close modal when clicking outside of modal content
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.visibility = 'hidden'; // Set visibility to hidden when closing
+                modal.style.opacity = '0'; // Set opacity to 0 when closing
+                document.body.classList.remove('modal-open'); // Enable body scrolling
+            }
+        });
+    });
+});
